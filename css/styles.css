@@ -2,15 +2,10 @@
 .navbar{
     
     background-color: grey;
+    
 
 }
-/* body{
-    background-image: url("/img/pizza1.png");
-    
-    background-size: cover;
-    background-position: fixed;
-    
-} */
+
 .container-fluid{
     background-image: url("/img/pizza.gif");
     
@@ -20,5 +15,12 @@
     padding-top: 20%;
     font-size: 18px;
     font-family: 'Langar', cursive;
+    font-weight: bold;
+    color: white;
 }
-
+.Table{
+    background-color: grey;
+    color: white;
+    text-align: center;
+    
+}
