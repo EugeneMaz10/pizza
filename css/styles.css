@@ -7,7 +7,7 @@
 }
 
 .container-fluid{
-    background-image: url("/img/pizza.gif");
+    background-image: url("/img/ipage.jpeg");
     
     background-size: cover;
     background-repeat: no-repeat;
@@ -22,5 +22,19 @@
     background-color: grey;
     color: white;
     text-align: center;
+    font-family: 'Redressed', cursive;
+    
+}
+.card{
+    background-color: black;
+    width: 47rem;
+    
+}
+form{
+    width: 40%;
+    margin-left: 30%;
+   background-color: black;
+    
+    
     
 }
