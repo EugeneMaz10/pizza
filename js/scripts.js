@@ -5,10 +5,16 @@ this.pizzaCrust=pizzaCrust;
 this.pizzaTopping=pizzaTopping;
 }
 var pizzaPrice= [900,600,400]
-function Total(pizzaPrice,pizzaNumber){
-    this.pizzaPrice=pizzaPrice;
+function Total(pizzaNumber,pizzaCrust,pizzaTopping,pizzaSize){
     this.pizzaNumber = pizzaNumber;
+    this.pizzaTopping= pizzaTopping;
+    this.pizzaCrust = pizzaCrust;
+    this.pizzaSize =pizzaSize;
+
 }
+Total.prototype.totalPrice = function(){
+    return this.pizzaPrice* this.pizzaNumber
+};
 function myPizza(){
     var pizzaFlavour= document.getElementById("Flavour").value;
     alert(pizzaFlavour);
