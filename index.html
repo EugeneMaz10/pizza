@@ -22,20 +22,20 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Make Order</a>
+                  <a class="nav-link" href="#order">Make Order</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
+                  <a class="nav-link" href="#pricing">Pricing</a>
                 </li>
         
               </ul>
             </div>
           </nav>
             
-    <div class="container-fluid">
+    <div class="container-fluid" id="home">
     <h1> Karibu</h1>
     <br>
     <h1> Pizza Online Order Platform</h1>
@@ -61,7 +61,7 @@
 </div>
 <br>
 
-<form action="">
+<form action="" id="order">
     <h2 style="text-align: center;color: white;">Order Now</h2>
 <div class="card" style="color: white;">
     <p>Choose the Pizza Flavour you want</p>
@@ -94,7 +94,7 @@
     <option value="170">Mushrooms @Ksh.170</option>
     <option value="200">Black olives @Ksh.200</option>
   </select>
-  
+  <option value="one">delivery fee of 200</option>
   <div class="form-group">
         <label for="" >Number of Pizza </label>
         <input type="number" class="form-control" id="number" placeholder="" required  min="1"/>
@@ -104,10 +104,11 @@
 
 </form>
 <br>
-<div class="jumbotron">
+<div class="jumbotron" id="pricing">
 <button type="button" class="btn btn-success btn-lg" style="margin-left: 40%;" onclick="myPizza()">Checkout</button>
 <br><br>
-<button type="button" class="btn btn-danger btn-lg" style="margin-left: 40%;">For Delivery</button>
+
+<button type="button" class="btn btn-danger btn-lg" style="margin-left: 40%;" value="one" onclick="onDelivery()" id="delivery">For Delivery</button>
 </div>
 
   
