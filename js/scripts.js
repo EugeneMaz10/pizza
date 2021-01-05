@@ -1,59 +1,52 @@
 var OrderNew = [];
-
-function Pizza(pizzaFlavour,pizzaSize,pizzaCrust,pizzaTopping) {
+function Pizza(pizzaFlavour,pizzaSize,pizzaCrust,pizzaTopping, PizzaNumber) {
     this.pizzaFlavour=pizzaFlavour;
     this.pizzaSize= pizzaSize;
     this.pizzaCrust=pizzaCrust;
     this.pizzaTopping=pizzaTopping;
+    this.PizzaNumber=PizzaNumber;
 }
-
 var pizzaPrice= [900,600,400,]
-
-
-
 Pizza.prototype.totalPrice = function(){
-    return (this.pizzaCrust + this.pizzaTopping + this.pizzaSize)* this.pizzaNumber
+    return (this.pizzaCrust + this.pizzaTopping + this.pizzaSize) * this.PizzaNumber
 };
-
-
 $("#checkout").click(function (event) {
     
     var PizzaFlavour = $("#Flavour").val();
-    console.log(PizzaFlavour)
-    alert(PizzaFlavour)
-
+    
     var PizzaSize = parseInt( $("#Size").val());
-    alert(PizzaSize)
-
+    
     var PizzaCrust = parseInt( $("#Crust").val());
-    alert(PizzaCrust)
-
+    
     var PizzaTopping =parseInt( $("#Topping").val());
-    alert(PizzaTopping)
-    // console.log(PizzaTopping)
     
-    var newPizzae = new Pizza(PizzaFlavour, PizzaSize, PizzaCrust, PizzaTopping); 
+    var PizzaNumber =parseInt( $("#number").val());
     
-    alert(newPizzae)
     
+    var newPizzae = new Pizza(PizzaFlavour, PizzaSize, PizzaCrust, PizzaTopping, PizzaNumber); 
+    
+    console.log("eeeeeeeeeee")
+    console.log(newPizzae)
+    console.log("eeeeeeeeeee")
+    console.log(newPizzae.pizzaFlavour)
     OrderNew.push(newPizzae);
     console.log(OrderNew)
     alert(OrderNew)
-    // $("#Flavour").val("");
-    // $("#Size").val("");
-    // $("#Crust").val("");
-    // $("#Toppings").val("");
+    $("#Flavour").val("");
+    $("#Size").val("");
+    $("#Crust").val("");
+    $("#Toppings").val("");
      
     totalAmount = 0
     for (let i = 0; i < OrderNew.length; i++ ){
         totalAmount += OrderNew[i].totalPrice();
+        console.log(totalAmount)
     }
     
     $("#ordersTaken").append(
         "<tr>" +
         '<td scope="orderCalculation">' +
         newPizzae.PizzaFlavour +
-        // " - " +
         
         "</td>" +
         "<td>" +
@@ -61,20 +54,15 @@ $("#checkout").click(function (event) {
         "</td>" +
         "<td>" +
         newPizzae.PizzaCrust +
-        // " @ " +
-        
         "</td>" +
         "<td>" +
         newPizzae.PizzaTopping +
-        // " @ " +
-        
         "</td>" +
         "<td>" +
         newPizzae.totalPrice() +
         "</td>" +
         "</tr>"
     );
-
     $("#ordersTaken").append("");
     if (OrderNew.length > 0) {
         $("#form-heading").empty();
@@ -86,13 +74,10 @@ $("#checkout").click(function (event) {
     $("#totalAmount").empty();
     $("#totalAmount").append(totalAmount);
     $("#totalAmount").show();
-
 });
-
 $("#Checkout").click(function () {
 $(".checkout-info").show();
 });
-
 $("#checkoutForm").submit(function (event) {
 event.preventDefault();
 var name = $("#name").val();
@@ -117,7 +102,6 @@ $(".TotalAmount").show();
     alert(NameOfCustomer + ": Your total bill is Ksh. " + totalAmount + ". Your order will be ready for collection in the next one hour." + " Make sure you have the total amount for the order during the delivery to avoid delays." + " Incase there is any comment of complaint, Please reach out to us as soon as possible.");
 }
 });
-
 $("#locationForm").submit(function (event) {
 event.preventDefault();
 var estateEntered = $("#estate").val();
@@ -131,4 +115,3 @@ $("#totalAmount").append(totalAmount);
 $(".TotalAmount").show();
 alert(NameOfCustomer + ": Your new total bill is Ksh. " + totalAmount + ". Your order will be delivered to " + estate + ", " + houseNumber + " in the next one hour." + " Make sure you have the total amount for the order during the delivery to avoid delays." + " Incase there is any comment of complaint, Please reach out to us as soon as possible");
 });
-    
