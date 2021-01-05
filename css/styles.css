@@ -31,13 +31,24 @@
     margin-left: 10%;
     
 }
-form{
+#card{
     width: 60%;
     margin-left: 20%;
+    background-color: black;
     /* margin-right: 30%; */
     
-   background-color: black;
+   
     
-    
+    @media screen { min-width: 480px;
+        
+    }
     
 }
+/* #orderClass{
+    background-color: black;
+}
+.jumbotron{
+    background-color: black;
+} */
+
+
