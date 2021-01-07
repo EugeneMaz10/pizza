@@ -32,10 +32,10 @@ $("#checkout").click(function (event) {
     OrderNew.push(newPizzae);
     console.log(OrderNew)
     alert(OrderNew)
-    $("#Flavour").val("");
-    $("#Size").val("");
-    $("#Crust").val("");
-    $("#Toppings").val("");
+    // $("#Flavour").val("");
+    // $("#Size").val("");
+    // $("#Crust").val("");
+    // $("#Toppings").val("");
      
     totalAmount = 0
     for (let i = 0; i < OrderNew.length; i++ ){
@@ -46,22 +46,31 @@ $("#checkout").click(function (event) {
     $("#ordersTaken").append(
         "<tr>" +
         '<td scope="orderCalculation">' +
-        newPizzae.PizzaFlavour +
-        
+       newPizzae.pizzaFlavour +
         "</td>" +
         "<td>" +
-        newPizzae.PizzaSize +
+        newPizzae.pizzaS () +
+        " @ " +
+        newPizzae.pizzaSize + 
         "</td>" +
         "<td>" +
-        newPizzae.PizzaCrust +
+        newPizzae.pizzaC () +
+        " @ " +
+        newPizzae.pizzaCrust + 
         "</td>" +
         "<td>" +
-        newPizzae.PizzaTopping +
+        newPizzae.pizzaT () +
+        " @ " +
+        newPizzae.pizzaTopping + 
+        "</td>" +
+        "<td>" +
+        newPizzae.PizzaNumber +
         "</td>" +
         "<td>" +
         newPizzae.totalPrice() +
         "</td>" +
         "</tr>"
+
     );
     $("#ordersTaken").append("");
     if (OrderNew.length > 0) {
