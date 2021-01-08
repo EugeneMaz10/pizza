@@ -25,8 +25,8 @@
 }
 .card{
     background-color: black;
-    width: 47rem;
-    margin-left: 10%;
+    /* width: 30rem;
+    margin-left: 10%; */
     
 }
 #card{
@@ -50,4 +50,8 @@
 } */
 .hidden{
     display: none;
+}
+.container form{
+    background-color: black;
+    color: white;
 }
