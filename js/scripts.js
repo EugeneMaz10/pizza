@@ -10,6 +10,38 @@ var pizzaPrice= [900,600,400,]
 Pizza.prototype.totalPrice = function(){
     return (this.pizzaCrust + this.pizzaTopping + this.pizzaSize) * this.PizzaNumber
 };
+Pizza.prototype.pizzaS = function () {
+    if (this.pizzaSize == 900) {
+        return "Large"
+        
+    } else if (this.pizzaSize == 600) {
+        return "Medium"
+    } else if (this.pizzaSize == 400) {
+        return "Small"
+    }
+}
+Pizza.prototype.pizzaC = function () {
+    if (this.pizzaCrust == 150) {
+        return "Thin"
+        
+    } else if (this.pizzaCrust == 200) {
+        return "Thick"
+    } else if (this.pizzaCrust == 250) {
+        return "Stuffed"
+    }
+}
+Pizza.prototype.pizzaT =function(){
+    if (this.pizzaTopping == 150){
+        return "Potato"
+    }
+    else if (this.pizzaTopping == 170){
+        return "Mushrooms"
+    }
+    else if ( this.pizzaTopping == 200){
+        return"Black olives"
+    }
+}
+
 $("#checkout").click(function (event) {
     
     var PizzaFlavour = $("#Flavour").val();
@@ -31,7 +63,7 @@ $("#checkout").click(function (event) {
     console.log(newPizzae.pizzaFlavour)
     OrderNew.push(newPizzae);
     console.log(OrderNew)
-    alert(OrderNew)
+    // alert(OrderNew)
     // $("#Flavour").val("");
     // $("#Size").val("");
     // $("#Crust").val("");
@@ -72,6 +104,7 @@ $("#checkout").click(function (event) {
         "</tr>"
 
     );
+    
     $("#ordersTaken").append("");
     if (OrderNew.length > 0) {
         $("#form-heading").empty();
