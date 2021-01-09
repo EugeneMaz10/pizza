@@ -1,70 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
-.navbar{
-    
-    background-color: grey;
-    
+@import url("https://fonts.googleapis.com/css2?family=Langar&display=swap");
+.navbar {
+  background-color: grey;
 }
-.container-fluid{
-    background-image: url("/img/ipage.jpeg");
-    
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    padding-top: 20%;
-    font-size: 18px;
-    font-family: 'Langar', cursive;
-    font-weight: bold;
-    color: white;
+.container-fluid {
+  background-image: url("/img/ipage.jpeg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 20%;
+  font-size: 18px;
+  font-family: "Langar", cursive;
+  font-weight: bold;
+  color: white;
 }
-.Table{
-    background-color: grey;
-    color: white;
-    text-align: center;
-    font-family: 'Redressed', cursive;
-    
+.Table {
+  background-color: grey;
+  color: white;
+  text-align: center;
+  font-family: "Redressed", cursive;
 }
-.card{
-    background-color: black;
-    /* width: 30rem;
+.card {
+  background-color:grey;
+
+  /* width: 30rem;
     margin-left: 10%; */
-    
 }
-#card{
-    width: 60%;
+#card {
+  /* width: 60%;
     margin-left: 20%;
-    background-color: black;
-    /* margin-right: 30%; */
-    
-   
-    
-    @media screen { min-width: 480px;
-        
-    }
-    
+    background-color: black; */
+  /* margin-right: 30%; */
+
+  @media screen {
+    min-width: 480px;
+  }
 }
-/* #orderClass{
-    background-color: black;
-}
-.jumbotron{
+
+/* #orderClass {
+  background-image: url("/img/3.jpeg");
+  color: black;
+  text-align: center;
+  
+} */
+/*.jumbotron{
     background-color: black;
 } */
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }
-.container form{
-    background-color: black;
-    color: white;
+.container form {
+  background-color:grey;
+  color: white;
 }
-nav .navbar-nav li a{
-    color: white !important;
-    font-size: 18px;
-
-    }
-    .nav-item:hover .nav-link{
+nav .navbar-nav li a {
+  color: white !important;
+  font-size: 18px;
+}
+#navbarNav:hover link {
+  color: blue;
+}
+/* .nav-item:hover .nav-link{
 color: blue;
-    }
-    body{
-        background-image: url("/img/3.jpeg");
-        background-position: cover;
-        
-    }
+    } */
+.container {
+    /* background-image: url("/img/3.jpeg"); */
+    color: black;
+    
+    background-repeat: no-repeat;
+}

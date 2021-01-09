@@ -20,7 +20,7 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
+              <ul class="navbar-nav" >
                 <li class="nav-item active">
                   <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                 </li>
@@ -113,6 +113,7 @@
 ​
 ​
 <br><br>
+<div class="container">
 <div class="col-sm-7" id="orderClass">
                
   <div class="orderCalculation">
@@ -121,8 +122,6 @@
       <table class="table table-sm  pizzaTable">
         <thead>
           <tr>
-            
-            
             <th scope="col">Flavour</th>
             <th scope="col">Size</th>
             <th scope="col">Crust</th>
@@ -142,7 +141,7 @@
         Total Amount: Ksh. <span id="totalAmount"></span>
     </p>
     <br /><br />
-      <button class="btn btn-orange" id="Checkout" onclick="myPizza()">Checkout</button>
+      <button class="btn btn-success" id="Checkout" onclick="myPizza()">Checkout</button>
       <div class="checkout-info hidden">
         <h3 id="check">Check form</h3>
         <form action="" id="checkoutForm">
@@ -154,7 +153,7 @@
 <option value="collect">Pick Up</option>
 </select>
 </div>
-<button type="submit" class="btn btn-orange" id="final-option">Deliver</button>
+<button type="submit" class="btn btn-success" id="final-option">Deliver</button>
 </form>
 </div>
 <div class="deliveryLocation hidden">
@@ -171,7 +170,7 @@
     required />
 </div>
 ​
-<button type="submit" class="btn btn-primary" id="submit" >Submit</button>
+<button type="submit" class="btn btn-success" id="submit" >Submit</button>
 </form>
 ​
 </div>
