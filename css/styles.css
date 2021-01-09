@@ -55,3 +55,16 @@
     background-color: black;
     color: white;
 }
+nav .navbar-nav li a{
+    color: white !important;
+    font-size: 18px;
+
+    }
+    .nav-item:hover .nav-link{
+color: blue;
+    }
+    body{
+        background-image: url("/img/3.jpeg");
+        background-position: cover;
+        
+    }
