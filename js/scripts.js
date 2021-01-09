@@ -57,17 +57,18 @@ $("#checkout").click(function (event) {
     
     var newPizzae = new Pizza(PizzaFlavour, PizzaSize, PizzaCrust, PizzaTopping, PizzaNumber); 
     
-    console.log("eeeeeeeeeee")
+    
     console.log(newPizzae)
-    console.log("eeeeeeeeeee")
+    
     console.log(newPizzae.pizzaFlavour)
     OrderNew.push(newPizzae);
     console.log(OrderNew)
-    // alert(OrderNew)
-    // $("#Flavour").val("");
-    // $("#Size").val("");
-    // $("#Crust").val("");
-    // $("#Toppings").val("");
+    
+    $("#Flavour").val("");
+    $("#Size").val("");
+    $("#Crust").val("");
+    $("#Topping").val("");
+    $("#number").val("");
      
     totalAmount = 0
     for (let i = 0; i < OrderNew.length; i++ ){
@@ -141,7 +142,7 @@ if (deliveryOption === "deliver") {
 $("#totalAmount").append(totalAmount);
 $(".TotalAmount").show();
 } else {
-    alert(NameOfCustomer + ": Your total bill is Ksh. " + totalAmount + ". Your order will be ready for collection in the next one hour." + " Make sure you have the total amount for the order during the delivery to avoid delays." + " Incase there is any comment of complaint, Please reach out to us as soon as possible.");
+    alert(+"Dear, "+ NameOfCustomer + ": Your total bill is Ksh. " + totalAmount + ".Collect your order in the next one hour." + " " + " Feel free to reach out to us anytime for questions peraining our products.");
 }
 });
 $("#locationForm").submit(function (event) {
@@ -155,5 +156,5 @@ $(".deliveryLocation").hide();
 $("#totalAmount").empty();
 $("#totalAmount").append(totalAmount);
 $(".TotalAmount").show();
-alert(NameOfCustomer + ": Your new total bill is Ksh. " + totalAmount + ". Your order will be delivered to " + estate + ", " + houseNumber + " in the next one hour." + " Make sure you have the total amount for the order during the delivery to avoid delays." + " Incase there is any comment of complaint, Please reach out to us as soon as possible");
+alert("Dear" + NameOfCustomer + ": Your new total bill is Ksh. " + totalAmount + ". Your order will be delivered to " + estate + ", " + houseNumber + " in the next one hour." + " Make full payment on delivery." + "Feel free to reach out to us anytime for questions peraining our products and deliveries.");
 });
