@@ -113,7 +113,7 @@ $("#checkout").click(function (event) {
     }
     $("#totalAmount").fadeIn();
     $("#Checkout").fadeIn();
-    $("#orderClass").fadeIn();
+    $("#orderPut").fadeIn();
     $("#totalAmount").empty();
     $("#totalAmount").append(totalAmount);
     $("#totalAmount").show();

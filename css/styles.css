@@ -19,6 +19,7 @@
   color: white;
   text-align: center;
   font-family: "Redressed", cursive;
+  
 }
 .card {
   background-color:grey;
@@ -63,9 +64,13 @@ nav .navbar-nav li a {
 /* .nav-item:hover .nav-link{
 color: blue;
     } */
-.container {
-    /* background-image: url("/img/3.jpeg"); */
+#contain {
+    background-color: lightblue;
     color: black;
-    
+    text-align: center;
     background-repeat: no-repeat;
+    font-family: 'Hanalei Fill', cursive;
+}
+.container{
+    font-family: 'Fugaz One', cursive;
 }
