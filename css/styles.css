@@ -16,7 +16,7 @@
 }
 h1{
     font-family: "Langar", cursive;
-    color:rgb(255, 248, 245),
+    
 }
 .Table {
   background-color: grey;
@@ -31,13 +31,7 @@ h1{
 
   
 }
-#card {
-  
 
-  @media screen {
-    min-width: 480px;
-  }
-}
 
 
 .hidden {
@@ -51,9 +45,7 @@ nav .navbar-nav li a {
   color: white !important;
   font-size: 18px;
 }
-#navbarNav:hover link {
-  color: blue;
-}
+
 
 #contain {
     background-color: lightblue;
