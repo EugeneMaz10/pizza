@@ -3,7 +3,7 @@
   background-color: grey;
 }
 .container-fluid {
-  background-image: url("//img/ipage.jpeg");
+  background-image: url("../img/ipage.jpeg");
 
   background-size: cover;
   background-repeat: no-repeat;
